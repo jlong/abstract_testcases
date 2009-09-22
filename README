@@ -1,0 +1,16 @@
+Abstract TestCases for Rails
+============================
+
+This plugin allows you to suppress the "No tests were specified" failure for 
+abstract test cases. To define an abstract test case, simply use the 
+convenient class method:
+
+  class MyAbstractTestCase < Test::Unit::TestCase
+    
+    # This is an abstract test case
+    self.abstract_testcase = true
+    
+  end
+
+The abstract test case plugin is Copyright (c) John W. Long, 2007 and is
+available under the same license as Rails.
